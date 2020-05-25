@@ -19,7 +19,7 @@
 -	情況為真且模型判斷為真：True Positive (TP)
 -	情況為真且模型判斷為假：False Negative (FN)
 -	情況為假且模型判斷為真：False Positive (FP)
--	情況為假且模型判斷為假：True Negative (TN)
+-	情況為假且模型判斷為假：True Negative (TN)  
 　　其中我們計算了在培訓過程中TP、FN、FP與TN的數值，並藉由精準率(Precision)跟召回率(Recall)去評估模型關於True Positive的預測能力。
 Precision = TP / (TP +FP)
 Recall = TP / (TP+ FN)
