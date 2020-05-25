@@ -21,10 +21,10 @@
 -	情況為假且模型判斷為真：False Positive (FP)
 -	情況為假且模型判斷為假：True Negative (TN)    
 
-　　其中我們計算了在培訓過程中TP、FN、FP與TN的數值，並藉由精準率(Precision)跟召回率(Recall)去評估模型關於True Positive的預測能力。
-Precision = TP / (TP +FP)
-Recall = TP / (TP+ FN)
-　　多類別分類中精準率跟召回率計算方式，有分為 macro 以及 micro 兩種。其中 micro 的方式通過先計算總體的TP，FN和FP的數量，再計算精準率跟召回率。而 macro 的方式則是分別計算每個類別的精準率跟召回率，然後做平均（各類別所佔的權重相同)。考慮到我們是多類別分類的問題，因此我們在計算時，使用了macro的方式去計算精準率跟召回率。藉此使得模型在評估上可以更加全面地兼顧到每一種類別。  
+　　其中我們計算了在培訓過程中TP、FN、FP與TN的數值，並藉由精準率(Precision)跟召回率(Recall)去評估模型關於True Positive的預測能力。  
+        Precision = TP / (TP +FP)  
+        Recall = TP / (TP+ FN)  
+　　多類別分類中精準率跟召回率計算方式，有分為 macro 以及 micro 兩種。其中 micro 的方式通過先計算總體的TP，FN和FP的數量，再計算精準率跟召回率。而 macro 的方式則是分別計算每個類別的精準率跟召回率，然後做平均（各類別所佔的權重相同)。考慮到我們是多類別分類的問題，因此我們在計算時，使用了macro的方式去計算精準率跟召回率。藉此使得模型在評估上可以更加全面地兼顧到每一種類別。   
 　　最後我們以 F1-score 計算精準率跟召回率的調和均值，作為我們評估模型的最終指標。
 F1-score = 2 (recall * precision) / (recall + precision)
 
