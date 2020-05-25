@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Carer</title> 
+    <script src="jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <!-- <script src="all.js"></script> -->
+</head>
+<body>
+        <div class="wrap">
+                <div class="header">
+                  <div id="mobile">
+                        <a id="logo">
+                          <img src="images/1" alt="index.html"></a> 
+                      <ul class="menu">
+                          <li><a href="" >HOME</a></li>
+                          <li><a href="#">個人資料</a></li>
+                          <li><a href="">歷史結果</a></li>
+                          <li id="intro"><a href="#">Introduction</a></li>
+                      </ul>
+<script>
+  if ($(window).width() <= 798){
+$(function(){
+   var  $mobile = $('#mobile') ,
+        $toggle = $mobile.find('#logo') ,
+        $menu = $mobile.find('.menu');
+     
+    $toggle.click(function(e) {
+        $menu.slideToggle()
+    });
+})
+  }
+</script>
+                      <ul class="login">
+                          <li id="login"><a href="#">登入/註冊</a></li>
+                          <li id="contact"><a href="#">Contact us</a></li>
+                      </ul>
+                      <script>    
+                            $(document).ready(function(){
+                                 $(function(){ $('#login').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('#content1').offset().top}, 500);});  
+                                }); 
+                            }); 
+                            $(document).ready(function(){
+                                 $(function(){ $('#contact').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('.location').offset().top}, 500);});  
+                                }); 
+                            });
+                            $(document).ready(function(){
+                                 $(function(){ $('#intro').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('.content').offset().top}, 500);});  
+                                }); 
+                            }); 
+                    </script>
+                    </div>
+                        </div>
+          <div class="BigLogo">
+            <img src="images/black.jpg" alt="">
+          </div>
+          <div class="clear"></div>
+          
+          <div class="content">
+              <div class="infor">
+                  <h2>預測結果</h2>
+                  <p> 根據您上傳之圖片，系統預測為黑色素瘤(Melanoma)！</p>
+              </div>
+              
+            <div class="predictbox">
+                    
+              <div class="one1">
+                <div class="introImg">
+                <img src="images/a.png" alt="">
+                </div>
+                <h2>病狀概述</h2>
+                <p>黑色素瘤在現今醫療資源進步的時代仍然是一種致命的惡性腫瘤，在許多其他類型的腫瘤發病率和死亡率明顯改善下降的時候，黑色素瘤的發病率卻持續增加，雖然大多數患者在診斷時是身體局部部位發病，並且通過手術切除原發腫瘤進行治療，但許多患者仍發生轉移 [1] 。
+                  黑色素瘤發病率急劇增加的一部分可歸咎於近年來紫外線輻射的增加，紫外線輻射是罹患黑素瘤的環境危險因素之一。研究顯示遺傳和基因變化呈現高度相關性，黑色素瘤基因有機會從上一代經過遺傳傳遞到下一代，是年齡在十五歲至四十五歲之間的族群中最常見的皮膚類型癌症 [2] 。
+                  早期診斷治療是降低黑素瘤死亡率的最有效措施之一。目前主要解決方法為早期檢測並切除，但切除後不代表痊癒，反而可能會導致黑色素瘤復發的風險增加，需要定期檢查以及追蹤，避免黑色素瘤發生移轉。
+                  </p>
+                </div>
+        
+                <div class="two2">
+                <div class="introImg">
+                <img src="images/b.png" alt="">
+                </div>
+                <h2>病徵</h2>
+                <p>身上具有較大的痣 (>5mm) 的人與黑素瘤的風險具有高度相關。非典型的痣通常較大，至少五毫米，具有扁平且有非典型特徵，例如色素堆積，不規則不對稱的輪廓和不明顯的邊界 [3] 。
+
+                  依型態可以分為四種 [1] :
+                  小痣色素性黑色素瘤：主要是長期曝曬在陽光下所造成，在面部上有較高機會出現。
+                  肢端黑色素瘤：主要出現在腳底。
+                  結節狀黑色素瘤：會在皮膚表面呈硬結狀，侵入皮膚較深。
+                  表淺擴散性黑色素瘤：此型態的黑色素瘤出現機率最高。
+                  </p>
+                </div>
+        
+                <div class="three3">
+                <div class="introImg">
+                <img src="images/c.png" alt="">
+                </div>
+                <h2>風險因素</h2>
+                <p>黑素瘤是由遺傳和環境暴露之間的相互作用引起的多因素疾病。發展為惡性黑色素瘤的最重要的環境風險因素是紫外線，因為它們具有遺傳毒性。Gandini研究了黑色素瘤和陽光暴露之間的相關性，實驗結論認為間歇性陽光照射是黑色素瘤風險的主要決定因素 [4] 。曬傷可能是間歇性日照暴露的主因，而在兒童時期曬傷罹病機率最高。
+                  另一危險因素是黑素細胞痣的數量，黑素細胞痣是黑素細胞或痣細胞的良性累積，可以是先天性的或由後天獲得。大約25％的黑色素瘤病例與預先存在的痣一起發生。此外，總痣計數與黑素瘤風險呈正相關，並且根據痣的數量，大小和類型而變化。分析結果強調，痣超過100的患者黑素瘤風險增加七倍 [3] 。
+                  </p>
+                </div>
+                        
+                    </div> 
+                
+          
+          </div>        
+
+          <div class="clear"></div>
+          
+          <div class="location">
+            <div class="ourlocation">
+              <h2>OUR LOCATION</h2>
+            </div>
+            <!-- <img src="http://fakeimg.pl/1280x250" alt=""> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8410600253987!2d120.28272561478035!3d22.734148232751163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f114a51d53b%3A0xe6e681ecaffe55f2!2z5ZyL56uL6auY6ZuE5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1576274636387!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clear"></div>
+          <div class="contact">
+          <div class="c1">
+            <h2>CONTACT US</h2>
+            <p1>高雄市楠梓區高雄大學700號</p1>
+            <p2>TEL : 0988215808</p2>
+            <p3>EMAIL : oouas231556@gmail.com</p3>
+          </div>
+          <div class="c2">
+              <h3>DONATE US</h3>
+              <a href="">We need you help!!!</a>
+            </div>
+            <div class="c3">
+                    <div class="message">
+                    <p>Leave message to us...</p>
+                    <input id="message" type="text" name="message">
+                    </div>
+                    <div class="submit">
+                    <input type="submit" value="Sumbit">
+                    </div>
+                </div>              
+          </div>
+          <div class="clear"></div>
+          <div class="footer">
+              <div class="footllist">
+              <ul>
+                <li>MADE BY NUKIM</li>
+                <li><a href="">使用說明</a></li>
+                <li><a href="">最新消息</a></li>
+              </ul>
+             </div>
+             <div class="footrlist">
+              <ul>
+                <li><a href="">網站使用條款</a></li>
+                <li><a href="">隱私權政策</a></li>
+                <li><a href="">免責聲明</a></li>
+                <li id="webname">© 2019 Skin Carer</li>
+              </ul>
+             </div>
+        </div>
+</body>
+</html>

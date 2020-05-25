@@ -1,0 +1,226 @@
+<?php
+ini_set(‘max_execution_time’, ‘0’);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKIN AIdentifier</title> 
+    <script src="jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <!-- <script src="all.js"></script> -->
+</head>
+<body>
+        <div class="wrap">
+                <div class="header">
+                  <div id="mobile">
+                        <a id="logo">
+                          <img src="images/1" alt="index.html"></a> 
+                      <ul class="menu">
+                          <li><a href="" >HOME</a></li>
+                          <li><a href="#">個人資料</a></li>
+                          <li><a href="">歷史結果</a></li>
+                          <li id="intro"><a href="#">Introduction</a></li>
+                      </ul>
+<script>
+  if ($(window).width() <= 798){
+$(function(){
+   var  $mobile = $('#mobile') ,
+        $toggle = $mobile.find('#logo') ,
+        $menu = $mobile.find('.menu');
+     
+    $toggle.click(function(e) {
+        $menu.slideToggle()
+    });
+})
+  }
+</script>
+                      <ul class="login">
+                          <li id="login"><a href="#">登入/註冊</a></li>
+                          <li id="contact"><a href="#">Contact us</a></li>
+                      </ul>
+                      <script>    
+                            $(document).ready(function(){
+                                 $(function(){ $('#login').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('#content1').offset().top}, 500);});  
+                                }); 
+                            }); 
+                            $(document).ready(function(){
+                                 $(function(){ $('#contact').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('.location').offset().top}, 500);});  
+                                }); 
+                            });
+                            $(document).ready(function(){
+                                 $(function(){ $('#intro').click(function(){ 
+                                    $('html,body').animate({scrollTop:$('.content').offset().top}, 500);});  
+                                }); 
+                            }); 
+                    </script>
+                    </div>
+                        </div>
+          <div class="BigLogo">
+            <img src="images/black.jpg" alt="">
+          </div>
+          <div class="clear"></div>
+          
+          <div class="content">
+              <div class="infor">
+                  <h2>Your health is what we care the most.</h2>
+                  <p>Taking up your three minutes , let's make you a peace of mind.</p>
+              </div>
+              
+            <div class="contentbox">
+                    
+              <div class="one">
+                <div class="introImg">
+                <img src="images/3" alt="">
+                </div>
+                <h2>上傳圖片</h2>
+                <p>提供會員上傳圖片之功能，這只需要花費您一點時間</p>
+                </div>
+        
+                <div class="two">
+                <div class="introImg">
+                <img src="images/4" alt="">
+                </div>
+                <h2>回傳預測報告</h2>
+                <p>上傳圖片後，經過預測模型後將回傳初步預測報告予使用者</p>
+                </div>
+        
+                <div class="three">
+                <div class="introImg">
+                <img src="images/5" alt="">
+                </div>
+                <h2>提供相關資訊</h2>
+                <p>此外，我們也提供各疾病之相關資訊</p>
+                </div>
+                        
+                    </div> 
+                <div class="inforTitle">
+                        <h2>你不可不知道的皮膚癌小常識</h2>
+                </div>
+                <div class="inforBoard">
+                    <div class="infor1">
+                        <div class="inforImg">
+                        <img src="http://inews.gtimg.com/newsapp_match/0/3154485675/0" alt="">
+                        </div>
+                        <h2>I am Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores soluta velit voluptatum nobis ea voluptate, consequatur labore harum aut? Rem dolore, obcaecati natus inventore dolorum nemo impedit laborum tenetur.</p>
+                    </div>
+                    <div class="infor2">
+                        <div class="inforImg">
+                        <img src="https://cleanclean.tw/images/1547434934884.jpg" alt="">
+                        </div>
+                        <h2>I am Title</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor culpa dicta, itaque inventore rerum minima. Distinctio aperiam quasi fuga? Pariatur soluta rerum iusto, praesentium illo sequi delectus temporibus fugit.</p>
+                    </div>
+                </div>
+                
+          <div class="member">
+
+           <form action="upload.php" method="post" enctype="multipart/form-data">
+           <div class="uploadBox">
+                   <div class="text">
+                       <div class="imgBoard">
+                       <img id="preview_uploadImg" src="#" />
+                       </div>
+                       <!-- <input type="file" id="uploadImg" name="uploadfile" accept="image/jpeg,image/gif,image/png"/> -->
+                       <a href="javascript:;" class="a-upload">
+                       <input type="file" id="uploadImg" name="uploadfile" accept="image/jpeg,image/gif,image/png"/>點擊這裡上傳圖片
+                       </a>
+                       <a href="javascript:;" class="s-upload">
+                        <input type="submit" id="upload" name="upload" value="確定上傳" />確定上傳
+                        </a>
+                       <!-- <input type="submit" id="upload" name="upload" value="確定上傳" /> -->
+                   </div>
+            </div>
+            </form>
+            <script>
+            $("#uploadImg").change(function(){
+            //當檔案改變後，做一些事 
+            readURL(this);   // this代表<input id="imgInp">
+            });
+            function readURL(input){
+                if(input.files && input.files[0]){
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                    $("#preview_uploadImg").attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }   
+            </script>
+          <div class="step">
+
+              <h2>Step1 預先拍下需要檢測的部位</h2>
+              <!-- <div class="stepImg">
+                <img src="http://fakeimg.pl/400x80" alt="">
+                </div> -->
+              
+              <h2>Step2 選擇上傳圖檔並確定上傳</h2>
+              <!-- <div class="stepImg">
+                <img src="http://fakeimg.pl/400x80" alt="">
+                </div> -->
+              
+              <h2>Step3 獲取我們為您呈上的預測報告！</h2>
+              <!-- <div class="stepImg">
+                <img src="http://fakeimg.pl/400x80" alt="">
+                </div>  -->
+              <p>*****系統僅作為初步預測判斷*****</p>
+              <p>*****如有不適應當儘速就醫！*****</p>
+
+          </div>
+
+          </div>         
+  
+          <div class="clear"></div>
+          
+          <div class="location">
+            <div class="ourlocation">
+              <h2>OUR LOCATION</h2>
+            </div>
+            <!-- <img src="http://fakeimg.pl/1280x250" alt=""> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8410600253987!2d120.28272561478035!3d22.734148232751163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f114a51d53b%3A0xe6e681ecaffe55f2!2z5ZyL56uL6auY6ZuE5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1576274636387!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="clear"></div>
+          <div class="contact">
+          <div class="c1">
+            <h2>CONTACT US</h2>
+            <p1>高雄市楠梓區高雄大學700號</p1>
+            <p2>TEL : 0988215808</p2>
+            <p3>EMAIL : oouas231556@gmail.com</p3>
+          </div>
+          <div class="c2">
+              <h3>DONATE US</h3>
+              <a href="">We need you help!!!</a>
+            </div>
+            <div class="c3">
+                    <div class="message">
+                    <p>Leave message to us...</p>
+                    <input id="message" type="text" name="message">
+                    </div>
+                    <div class="submit">
+                    <input type="submit" value="Sumbit">
+                    </div>
+                </div>              
+          </div>
+          <div class="clear"></div>
+          <div class="footer">
+              <div class="footllist">
+              <ul>
+                <li>MADE BY NUKIM</li>
+                <li><a href="">使用說明</a></li>
+                <li><a href="">最新消息</a></li>
+              </ul>
+             </div>
+             <div class="footrlist">
+              <ul>
+                <li><a href="">網站使用條款</a></li>
+                <li><a href="">隱私權政策</a></li>
+                <li><a href="">免責聲明</a></li>
+                <li id="webname">© 2019 Skin Carer</li>
+              </ul>
+             </div>
+        </div>
+</body>
+</html>
