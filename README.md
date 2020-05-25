@@ -1,7 +1,7 @@
 # finalProject
 皮膚辨識專題（由ham10000資料集訓練而成）
 
-***在aboutTraining的資料夾中附上了詳細的訓練代碼***
+******在aboutTraining的資料夾中附上了詳細的訓練代碼******
 
 
 //模型建構
